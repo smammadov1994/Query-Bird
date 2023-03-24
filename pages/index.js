@@ -3,7 +3,6 @@ import { useDropzone } from "react-dropzone";
 import axios from "axios";
 
 const MyDropzone = ({ onUpload }) => {
-  console.log(process.env.NEXT_PUBLIC_FACTS_API_KEY);
   const onDrop = useCallback((acceptedFiles) => {
     onUpload(acceptedFiles);
   }, []);
